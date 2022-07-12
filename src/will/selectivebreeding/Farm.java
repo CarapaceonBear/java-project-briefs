@@ -2,11 +2,12 @@ package will.selectivebreeding;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class Farm {
 
     private String name;
-    private final List<Animal> farm = new ArrayList<>();
+    private final List<Dragon> farm = new ArrayList<>();
 
     public Farm(String name) {
         this.name = name;
@@ -27,7 +28,16 @@ public class Farm {
         return String.format("New %s added, called %s", animal, name);
     }
 
-    public List<Animal> getAnimalsList() {
+    public List<Dragon> getDragonsList() {
         return farm;
+    }
+
+    public Dragon searchDragonByName(String name) {
+        try {
+            return farm.stream().filter(dragon -> dragon.getName().equals(name)).findFirst().get();
+        } catch (NoSuchElementException e) {
+            System.out.println(e);
+            return new Dragon("empty");
+        }
     }
 }

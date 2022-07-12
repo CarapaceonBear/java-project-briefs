@@ -5,11 +5,28 @@ public abstract class Animal {
     private int idCounter = 0;
     private int id;
     private String name;
+    private String reproductivity;
 
     public Animal(String name) {
         this.name = name;
         this.id = idCounter;
         idCounter++;
+        setReproductivity();
+    }
+
+    private void setReproductivity() {
+        int value = (int) (Math.random() * 3);
+        switch(value) {
+            case 0:
+               reproductivity = Reproductivity.MALE.getStatus();
+               break;
+            case 1:
+                reproductivity = Reproductivity.FEMALE.getStatus();
+                break;
+            case 2:
+                reproductivity = Reproductivity.INFERTILE.getStatus();
+                break;
+        }
     }
 
     public Animal() {}
