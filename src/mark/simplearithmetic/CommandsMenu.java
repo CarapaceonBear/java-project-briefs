@@ -4,55 +4,54 @@ import java.util.Scanner;
 
 public class CommandsMenu {
 
-    static Scanner scanner = new Scanner(System.in);
-
-
-
-    int num1 = scanner.nextInt();
-    int num2 = scanner.nextInt();
+    private final Scanner scanner = new Scanner(System.in);
 
     public void displayCommands() {
 
 
-
-        int sum = 0;
-        int choice = scanner.nextInt();
+        System.out.println("Enter first number: ");
+        double num1 =  scanner.nextDouble();
+        System.out.println("Enter second number: ");
+        double num2 =  scanner.nextDouble();
 
         System.out.println("Choose option to make calculation");
         System.out.println("1: Addition");
         System.out.println("2: Subtraction");
         System.out.println("3: Multiplication");
         System.out.println("4: Division");
-        System.out.println("5: Exit");
 
-
+        int choice = scanner.nextInt();
 
         switch(choice) {
             case 1:
-                sum = num1 + num2;
-                System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+                Addition.addTwoNumbers(num1, num2);
                 break;
             case 2:
-                sum = num1 - num2;
-                System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+                Subtraction.subtractTwoNumbers(num1, num2);
                 break;
             case 3:
-                sum = num1 * num2;
-                System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+                Multiplication.multiplyTwoNumbers(num1, num2);
                 break;
             case 4:
-                sum = num1 / num2;
-                System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+                Division.divideTwoNumbers(num1, num2);
                 break;
-                default:
-                    System.out.println("Invalid choice");
-                    break;
+
+                default: System.out.println("Invalid choice");
+                break;
         }
 
-
-
+        System.out.println("Do you want to make another calculation? (y/n)");
+        String answer = scanner.next();
+        if (answer.equals("y")) {
+            displayCommands();
+        } else if (answer.equals("n")) {
+            System.out.println("Ok, Bye 👋");
+        } else {
+            System.out.println("Invalid answer");
+        }
 
     }
+
 
 
 }
