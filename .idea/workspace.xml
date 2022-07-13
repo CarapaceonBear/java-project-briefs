@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a92cf91-e7e8-454a-8eb4-578d99f1160e" name="Changes" comment="# ----------------------------------------------------------&#10;# Header - (type): Brief description&#10;# ----------------------------------------------------------&#10;#   * feat         A new feature&#10;#   * setup        Style/format changes (whitespace, etc.)&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * fix          A bug fix&#10;#   * docs         Changes to documentation only&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * refactor     Changes not related to a bug or feature&#10;#   * perf         Changes that affects performance&#10;#   * test         Changes that add/modify/correct tests&#10;#   * build        Changes to build system (configs, etc.)&#10;#   * ci           Changes to CI pipeline/workflow&#10;# ----------------------------------------------------------&#10;&#10;# ----------------------------------------------------------&#10;# Body - More detailed description, if necessary&#10;# ----------------------------------------------------------&#10;#   * Motivation behind changes, more detail into how &#10;# functionality might be affected, etc.&#10;# ----------------------------------------------------------&#10;&#10;# ----------------------------------------------------------&#10;# Footer - Associated issues, PRs, etc.&#10;# ----------------------------------------------------------&#10;#   * Ex: Resolves Issue #207, see PR #15, etc.&#10;# ----------------------------------------------------------">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-project-briefs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-simple-arithmetic.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/01-simple-arithmetic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-rock-paper-scissors.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/02-rock-paper-scissors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-quiz-game.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/03-quiz-game.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-distance-between-cities.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/04-distance-between-cities.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-text-adventure.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/05-text-adventure.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-employee-registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/06-employee-registry.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-selective-breeding.md" beforeDir="false" afterPath="$PROJECT_DIR$/briefs/07-selective-breeding.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernanda/simplearithmetic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernanda/simplearithmetic/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ASUS-Fer/Desktop/Niue/development/java/java-projects-brief/java-project-briefs",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\charlie.richardson\development\nology\java-project-briefs\briefs" />
