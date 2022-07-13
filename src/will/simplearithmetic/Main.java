@@ -2,5 +2,9 @@ package will.simplearithmetic;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Let's solve simple-arithmetic");}
+        UserInput user = new UserInput();
+        CommandsMenu menu = new CommandsMenu(user);
+
+        menu.runMenu();
+    }
 }
