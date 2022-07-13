@@ -1,7 +1,6 @@
 package gavin.simplearithmetic;
 
 import gavin.simplearithmetic.operations.Addition;
-import gavin.simplearithmetic.operations.Operation;
 import gavin.simplearithmetic.operations.Subtraction;
 
 public class MultilineCalcCommands extends ArithmeticCommands{
