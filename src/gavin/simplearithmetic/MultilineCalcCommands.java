@@ -1,5 +1,9 @@
 package gavin.simplearithmetic;
 
+import gavin.simplearithmetic.operations.Addition;
+import gavin.simplearithmetic.operations.Operation;
+import gavin.simplearithmetic.operations.Subtraction;
+
 public class MultilineCalcCommands extends ArithmeticCommands{
     public MultilineCalcCommands() {
         super("Multiline Calculator", new String[]{}, "multiline-calculator");
@@ -31,11 +35,12 @@ public class MultilineCalcCommands extends ArithmeticCommands{
 
             switch (operator) {
                 case "+" :
-                    result = firstNum + secondNum;
+                    Addition addition = new Addition(firstNum, secondNum);
+                    result = addition.calculate();
                     break;
                 case "-" :
-                    result = firstNum - secondNum;
-                    break;
+                    Subtraction subtraction = new Subtraction(firstNum, secondNum);
+                    result = subtraction.calculate();
                 case "/" :
                     result = firstNum / secondNum;
                     break;

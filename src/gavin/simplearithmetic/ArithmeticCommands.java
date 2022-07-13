@@ -84,10 +84,7 @@ public abstract class ArithmeticCommands {
     }
 
     public String getStringInput() {
-        System.out.println("Enter text below: ");
-
-
-
+        System.out.println("Enter operator below: ");
         boolean correctInput = true;
         String userInput = "";
         while (userInput.equals("")) {
