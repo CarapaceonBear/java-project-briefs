@@ -12,29 +12,41 @@ public class Calculator {
 
         int num1 = scanner.nextInt();
 
-        System.out.println("Second Number");
+    public void main() {
 
-        int num2 = scanner.nextInt();
+        UserInput userInput = new UserInput();
+        boolean isActive = true;
 
-        System.out.println("Operator");
+        while (isActive) {
+            int num1 = userInput.getIntInput("Enter first number:");
+            int num2 = userInput.getIntInput("Enter second number:");
+            String operator = userInput.getStringInput("Enter operator:");
 
-        String operator = scanner.next();
+            switch (operator) {
+                case "+":
+                    Addition addition = new Addition();
+                    addition.performAddition(num1, num2);
+                    break;
+                case "-":
+                    Subtraction subtraction = new Subtraction();
+                    subtraction.performSubtraction(num1, num2);
+                    break;
+                case "*":
+                    Multiplication multiplication = new Multiplication();
+                    multiplication.performMultiplication(num1, num2);
+                    break;
+                case "/":
+                    Division division = new Division();
+                    division.performDivision(num1, num2);
+                    break;
+                default:
+                    System.out.println("Operator not recognised");
+            }
 
-        switch (operator) {
-            case "+":
-                int addResult = num1 + num2;
-                return String.format("%s %s %s = %s", num1, operator, num2, addResult);
-            case "-":
-                int subtractResult = num1 - num2;
-                return String.format("%s %s %s = %s", num1, operator, num2, subtractResult);
-            case "*":
-                int multiplyResult = num1 * num2;
-                return String.format("%s %s %s = %s", num1, operator, num2, multiplyResult);
-            case "/":
-                float divideResult = (float) num1 / num2;
-                return String.format("%s %s %s = %s", num1, operator, num2, divideResult);
-            default:
-                return "operator not recognised";
+            int input = userInput.getIntInput("Would you like to perform another calculation?\n1. Yes\n2. No");
+            if (input == 2) {
+                isActive = false;
+            }
         }
     }
 }
