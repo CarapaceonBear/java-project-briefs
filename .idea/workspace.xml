@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a92cf91-e7e8-454a-8eb4-578d99f1160e" name="Changes" comment="Setup animal, dragon and farm classes">
-      <change afterPath="$PROJECT_DIR$/src/will/selectivebreeding/Reproductivity.java" afterDir="false" />
+    <list default="true" id="3a92cf91-e7e8-454a-8eb4-578d99f1160e" name="Changes" comment="enum for reproductive status, set in animal constructor">
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/Addition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/CommandsMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/Multiplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/Subtraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/will/simplearithmetic/UserInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/will/selectivebreeding/Farm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/will/selectivebreeding/Farm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +52,7 @@
       <recent name="C:\Users\charlie.richardson\development\nology\java-project-briefs\briefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.aiman.employeeregistry.Main">
+  <component name="RunManager" selected="Application.will.simplearithmetic.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Main" />
       <module name="java-project-briefs" />
@@ -73,8 +79,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="will.simplearithmetic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="will.simplearithmetic.Main" />
+      <module name="java-project-briefs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="will.simplearithmetic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.will.simplearithmetic.Main" />
         <item itemvalue="Application.aiman.employeeregistry.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -96,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657625630728</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="enum for reproductive status, set in animal constructor">
+      <created>1657627460301</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657627460301</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setup animal, dragon and farm classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup animal, dragon and farm classes" />
+    <MESSAGE value="enum for reproductive status, set in animal constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="enum for reproductive status, set in animal constructor" />
   </component>
 </project>
