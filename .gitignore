@@ -2,6 +2,8 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/workspace.xml
+.idea
 
 ### Eclipse ###
 .apt_generated
@@ -27,5 +29,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+<<<<<<< HEAD
 
 .idea/workspace.xml
+=======
+>>>>>>> a06099106ece5651faf985f6cf7601e6c05ea456
