@@ -6,11 +6,19 @@ public class Calculator {
 
     Scanner scanner = new Scanner(System.in);
 
-    public String main() {
+    public void printMessage(String message) {
+        System.out.println(message);
+    }
 
-        System.out.println("First Number");
+    public int getIntInput(String message) {
+        printMessage(message);
+        return scanner.nextInt();
+    }
 
-        int num1 = scanner.nextInt();
+    public String getStringInput(String message) {
+        printMessage(message);
+        return scanner.next();
+    }
 
     public void main() {
 
