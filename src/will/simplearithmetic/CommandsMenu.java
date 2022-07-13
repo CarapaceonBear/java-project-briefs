@@ -4,23 +4,21 @@ import java.text.DecimalFormat;
 
 public class CommandsMenu {
 
-    private String[] menuCommands = {"Run calculation", "Quit"};
-    private String[] operatorCommands = {"+", "-", "*", "/"};
-    private UserInput user;
-    private boolean isActive;
-    private boolean isCalculating;
-    private DecimalFormat decimalPlaces = new DecimalFormat("0.000");
-    private Addition addition = new Addition();
-    private Subtraction subtraction = new Subtraction();
-    private Multiplication multiplication = new Multiplication();
-    private Division division = new Division();
+    private final String[] menuCommands = {"Run calculation", "Quit"};
+    private final String[] operatorCommands = {"+", "-", "*", "/"};
+    private final UserInput user;
+    private final DecimalFormat decimalPlaces = new DecimalFormat("0.000");
+    private final Addition addition = new Addition();
+    private final Subtraction subtraction = new Subtraction();
+    private final Multiplication multiplication = new Multiplication();
+    private final Division division = new Division();
 
     public CommandsMenu(UserInput user) {
         this.user = user;
     }
 
     public void runMenu() {
-        isActive = true;
+        boolean isActive = true;
         while (isActive) {
             printCommands(menuCommands);
             int selection = user.readMenuSelection(menuCommands.length);
