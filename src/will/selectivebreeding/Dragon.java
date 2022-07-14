@@ -20,8 +20,8 @@ public class Dragon extends Animal {
 
     @Override
     public String toString() {
-        return String.format("Flying speed : %d,\n Scale quality : %d,\n Egg size : %d,\n Breath temperature : %d",
-                flyingSpeed, scaleQuality, eggSize, breathTemperature);
+        return String.format("%s, %s\nFlying speed : %d,\nScale quality : %d,\nEgg size : %d,\nBreath temperature : %d",
+                getName(), getReproductivity(), flyingSpeed, scaleQuality, eggSize, breathTemperature);
     }
 
     public int getFlyingSpeed() {

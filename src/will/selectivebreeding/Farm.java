@@ -13,7 +13,7 @@ public class Farm {
         this.name = name;
     }
 
-    private String addAnimalWithRandomValues(String animal, String name) {
+    public String addAnimalWithRandomValues(String animal, String name) {
         switch(animal) {
             case "dragon":
                 farm.add(new Dragon(name));

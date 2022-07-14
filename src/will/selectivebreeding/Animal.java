@@ -14,6 +14,8 @@ public abstract class Animal {
         setReproductivity();
     }
 
+    public Animal() {}
+
     private void setReproductivity() {
         int value = (int) (Math.random() * 3);
         switch(value) {
@@ -29,7 +31,9 @@ public abstract class Animal {
         }
     }
 
-    public Animal() {}
+    public String getReproductivity() {
+        return reproductivity;
+    }
 
     public int getIdCounter() {
         return idCounter;
