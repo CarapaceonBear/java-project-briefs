@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a92cf91-e7e8-454a-8eb4-578d99f1160e" name="Changes" comment="# ----------------------------------------------------------&#10;# Header - (type): Brief description&#10;# ----------------------------------------------------------&#10;#   * feat         A new feature&#10;#   * setup        Style/format changes (whitespace, etc.)&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * fix          A bug fix&#10;#   * docs         Changes to documentation only&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * refactor     Changes not related to a bug or feature&#10;#   * perf         Changes that affects performance&#10;#   * test         Changes that add/modify/correct tests&#10;#   * build        Changes to build system (configs, etc.)&#10;#   * ci           Changes to CI pipeline/workflow&#10;# ----------------------------------------------------------&#10;&#10;# ----------------------------------------------------------&#10;# Body - More detailed description, if necessary&#10;# ----------------------------------------------------------&#10;#   * Motivation behind changes, more detail into how &#10;# functionality might be affected, etc.&#10;# ----------------------------------------------------------&#10;&#10;# ----------------------------------------------------------&#10;# Footer - Associated issues, PRs, etc.&#10;# ----------------------------------------------------------&#10;#   * Ex: Resolves Issue #207, see PR #15, etc.&#10;# ----------------------------------------------------------">
+      <change afterPath="$PROJECT_DIR$/src/mark/rockpaperscissors/RockPaperScissors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mark/simplearithmetic/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/simplearithmetic/Addition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mark/simplearithmetic/CommandsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/simplearithmetic/CommandsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mark/simplearithmetic/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/simplearithmetic/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mark/simplearithmetic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/simplearithmetic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mark/simplearithmetic/Multiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/simplearithmetic/Multiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mark/simplearithmetic/Subtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/simplearithmetic/Subtraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mark/rockpaperscissors/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mark/rockpaperscissors/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
       <recent name="C:\Users\charlie.richardson\development\nology\java-project-briefs\briefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.mark.simplearithmetic.Main">
+  <component name="RunManager" selected="Application.mark.rockpaperscissors.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Main" />
       <module name="java-project-briefs" />
@@ -79,6 +75,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mark.rockpaperscissors.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mark.rockpaperscissors.Main" />
+      <module name="java-project-briefs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mark.rockpaperscissors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="mark.simplearithmetic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mark.simplearithmetic.Main" />
       <module name="java-project-briefs" />
@@ -94,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mark.rockpaperscissors.Main" />
         <item itemvalue="Application.mark.simplearithmetic.Main" />
         <item itemvalue="Application.aiman.employeeregistry.Main" />
         <item itemvalue="Application.Main" />
