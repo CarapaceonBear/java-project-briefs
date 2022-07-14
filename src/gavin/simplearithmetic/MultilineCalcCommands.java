@@ -1,6 +1,7 @@
 package gavin.simplearithmetic;
 
 import gavin.simplearithmetic.operations.Addition;
+import gavin.simplearithmetic.operations.Multiplication;
 import gavin.simplearithmetic.operations.Subtraction;
 
 public class MultilineCalcCommands extends ArithmeticCommands{
@@ -11,6 +12,7 @@ public class MultilineCalcCommands extends ArithmeticCommands{
     @Override
     public void run() {
         printMessage("Welcome to the multiline calculator! \nEnter a number followed by an operator.");
+        printMessage("The operators are: \n+ \n- \n/ \n*");
 
         double firstNum = getDoubleInput();
         double result = 0;
@@ -40,14 +42,17 @@ public class MultilineCalcCommands extends ArithmeticCommands{
                 case "-" :
                     Subtraction subtraction = new Subtraction(firstNum, secondNum);
                     result = subtraction.calculate();
+                    break;
                 case "/" :
                     result = firstNum / secondNum;
                     break;
                 case "*" :
-                    result = firstNum * secondNum;
+                    Multiplication multiply = new Multiplication(firstNum, secondNum);
+                    result = multiply.calculate();
                     break;
                 case "q" :
                     isActive = false;
+                    break;
             }
 
             printMessage("Result is " + result);
