@@ -6,6 +6,6 @@ public class Division extends Operation{
     }
 
     public double calculate () {
-        return getFirst() * getSecond();
+        return getFirst() / getSecond();
     }
 }
