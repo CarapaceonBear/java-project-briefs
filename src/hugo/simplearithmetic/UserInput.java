@@ -1,14 +1,23 @@
 package hugo.simplearithmetic;
 
+import java.util.Scanner;
+
 public class UserInput extends Calculator {
-    @Override
+
+    Scanner scanner = new Scanner(System.in);
+
     public int getIntInput(String message) {
-        return super.getIntInput(message);
+        printMessage(message);
+        return scanner.nextInt();
     }
 
-    @Override
     public String getStringInput(String message) {
-        return super.getStringInput(message);
+        printMessage(message);
+        return scanner.next();
     }
 
+    public String getSumInput(String message) {
+        printMessage(message);
+        return scanner.nextLine();
+    }
 }
