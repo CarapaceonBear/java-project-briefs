@@ -1,5 +1,7 @@
 package younus.simplearithmetic;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -25,11 +27,16 @@ public class Main {
             } else if (commandInput == 5) {
                 home.addToExpression("/");
             } else if (commandInput == 6) {
-                home.addToExpression("=");
+                List<String> expression = home.getExpression();
+                Division division = new Division(expression);
+                Multiplication multiplication = new Multiplication(division.divideNumbers());
+                Subtraction subtraction = new Subtraction(multiplication.timesNumbers());
+                Addition addition = new Addition(subtraction.minusNumbers());
+                System.out.println(addition.addNumbers());
+
             } else {
                 isActive = false;
             }
         }
-
     }
 }
