@@ -28,9 +28,15 @@ public class RockPaperScissorsLizardSpockCommands extends Commands{
                 case 3:
                     printMessage("You played Scissors!");
                     break;
+                case 4:
+                    printMessage("You played Lizard!");
+                    break;
+                case 5:
+                    printMessage("You played Spock!");
+                    break;
             }
 
-            int cpuInput = (int) (Math.random()*3+1);
+            int cpuInput = (int) (Math.random()*5+1);
             switch (cpuInput) {
                 case 1:
                     printMessage("CPU played Rock!");
@@ -40,6 +46,12 @@ public class RockPaperScissorsLizardSpockCommands extends Commands{
                     break;
                 case 3:
                     printMessage("CPU played Scissors!");
+                    break;
+                case 4:
+                    printMessage("You played Lizard!");
+                    break;
+                case 5:
+                    printMessage("You played Spock!");
                     break;
             }
 
