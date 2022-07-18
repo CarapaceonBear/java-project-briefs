@@ -5,7 +5,7 @@ public enum Reproductivity {
     FEMALE("Fertile Female"),
     INFERTILE("Infertile");
 
-    private String status;
+    private final String status;
 
     Reproductivity(String status) {
         this.status = status;

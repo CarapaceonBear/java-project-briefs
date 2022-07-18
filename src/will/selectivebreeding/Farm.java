@@ -32,6 +32,10 @@ public class Farm {
         return farm;
     }
 
+    public void addToDragonList(Dragon dragon) {
+        farm.add(dragon);
+    }
+
     public Dragon searchDragonByName(String name) {
         try {
             return farm.stream().filter(dragon -> dragon.getName().equals(name)).findFirst().get();

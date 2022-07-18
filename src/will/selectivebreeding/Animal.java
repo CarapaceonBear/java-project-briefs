@@ -16,17 +16,17 @@ public abstract class Animal {
 
     public Animal() {}
 
-    private void setReproductivity() {
+    public void setReproductivity() {
         int value = (int) (Math.random() * 3);
         switch(value) {
             case 0:
-               reproductivity = Reproductivity.MALE.getStatus();
+               this.reproductivity = Reproductivity.MALE.getStatus();
                break;
             case 1:
-                reproductivity = Reproductivity.FEMALE.getStatus();
+                this.reproductivity = Reproductivity.FEMALE.getStatus();
                 break;
             case 2:
-                reproductivity = Reproductivity.INFERTILE.getStatus();
+                this.reproductivity = Reproductivity.INFERTILE.getStatus();
                 break;
         }
     }
