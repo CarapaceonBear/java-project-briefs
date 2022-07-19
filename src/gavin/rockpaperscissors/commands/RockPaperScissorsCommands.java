@@ -1,4 +1,6 @@
-package gavin.rockpaperscissors;
+package gavin.rockpaperscissors.commands;
+
+import gavin.rockpaperscissors.commands.Commands;
 
 public class RockPaperScissorsCommands extends Commands {
     public RockPaperScissorsCommands() {

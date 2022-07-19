@@ -1,4 +1,4 @@
-package gavin.rockpaperscissors;
+package gavin.rockpaperscissors.commands;
 import java.util.ArrayList;
 import java.util.Scanner;
 

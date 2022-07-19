@@ -1,5 +1,5 @@
 package gavin.rockpaperscissors;
 
 public enum Play {
-    Rock, Paper, Scissors
+    Rock, Paper, Scissors, Lizard, Spock
 }
