@@ -13,8 +13,8 @@ public class Moves {
         return false;
     }
 
-    public String printUserMove () {
-        return "You played " + move + "!";
+    public String printMoves () {
+        return "You played " + move + "!\nThe CPU played " + opposing + "!";
     }
 
 }

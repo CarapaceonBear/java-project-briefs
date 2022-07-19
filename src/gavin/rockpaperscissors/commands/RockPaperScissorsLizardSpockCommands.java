@@ -47,31 +47,30 @@ public class RockPaperScissorsLizardSpockCommands extends Commands {
             switch (userInput) {
                 case 1:
                     Rock rock = new Rock(cpuMove);
-                    printMessage(rock.printUserMove());
+                    printMessage(rock.printMoves());
                     win = rock.checkWin();
                     break;
                 case 2:
                     Paper paper = new Paper(cpuMove);
-                    printMessage(paper.printUserMove());
+                    printMessage(paper.printMoves());
                     win = paper.checkWin();
                     break;
                 case 3:
                     Scissors scissors = new Scissors(cpuMove);
-                    printMessage(scissors.printUserMove());
+                    printMessage(scissors.printMoves());
                     win = scissors.checkWin();
                     break;
                 case 4:
                     Lizard lizard = new Lizard(cpuMove);
-                    printMessage(lizard.printUserMove());
+                    printMessage(lizard.printMoves());
                     win = lizard.checkWin();
                     break;
                 case 5:
                     Spock spock = new Spock(cpuMove);
-                    printMessage(spock.printUserMove());
+                    printMessage(spock.printMoves());
                     win = spock.checkWin();
                     break;
             }
-            printMessage("CPU played " + cpuMove + "!");
 
             if (userInput == cpuInput) {
                 printMessage("Draw!");
