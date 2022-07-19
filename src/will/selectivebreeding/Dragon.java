@@ -14,6 +14,8 @@ public class Dragon extends Animal {
         setName(name);
         setId(getIdCounter());
         super.setIdCounter(getIdCounter() + 1);
+        this.sex = (Math.random() > 0.5) ? "male" : "female";
+        this.reproductivity = (Math.random() < 0.2) ? "infertile" : "fertile";
 
         this.flyingSpeed = Math.random() * 5;
         this.scaleQuality = Math.random() * 5;
@@ -25,7 +27,8 @@ public class Dragon extends Animal {
         setName(name);
         setId(getIdCounter());
         super.setIdCounter(getIdCounter() + 1);
-        setReproductivity();
+        this.sex = (Math.random() > 0.5) ? "male" : "female";
+        this.reproductivity = (Math.random() < 0.2) ? "infertile" : "fertile";
 
         this.flyingSpeed = flyingSpeed;
         this.scaleQuality = scaleQuality;
@@ -44,8 +47,8 @@ public class Dragon extends Animal {
 
     @Override
     public String toString() {
-        return String.format("%s, %s\nFlying speed : %s,\nScale quality : %s,\nEgg size : %s,\nBreath temperature : %s",
-                getName(), getReproductivity(), df.format(flyingSpeed), df.format(scaleQuality), df.format(eggSize), df.format(breathTemperature));
+        return String.format("%s, %s, %s\nFlying speed : %s,\nScale quality : %s,\nEgg size : %s,\nBreath temperature : %s",
+                getName(), getSex(), getReproductivity(), df.format(flyingSpeed), df.format(scaleQuality), df.format(eggSize), df.format(breathTemperature));
     }
 
     public double getFlyingSpeed() {

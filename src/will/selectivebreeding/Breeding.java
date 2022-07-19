@@ -3,11 +3,11 @@ package will.selectivebreeding;
 public class Breeding {
 
     public static Dragon breedDragonPair(Dragon a, Dragon b) {
-        if (a.getReproductivity().equals("Infertile") || b.getReproductivity().equals("Infertile")) {
+        if (a.getReproductivity().equals("infertile") || b.getReproductivity().equals("infertile")) {
 //            infertile
             return new Dragon();
         }
-        if (a.getReproductivity().equals(b.getReproductivity())) {
+        if (a.getSex().equals(b.getSex())) {
 //            same sex
             return new Dragon();
         }

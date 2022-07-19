@@ -5,35 +5,18 @@ public abstract class Animal {
     private int idCounter = 0;
     private int id;
     private String name;
-    private String reproductivity;
+    protected String sex;
+    protected String reproductivity;
 
     public Animal(String name) {
         this.name = name;
         this.id = idCounter;
         idCounter++;
-        setReproductivity();
+        this.sex = (Math.random() > 0.5) ? "male" : "female";
+        this.reproductivity = (Math.random() < 0.2) ? "infertile" : "fertile";
     }
 
     public Animal() {}
-
-    public void setReproductivity() {
-        int value = (int) (Math.random() * 3);
-        switch(value) {
-            case 0:
-               this.reproductivity = Reproductivity.MALE.getStatus();
-               break;
-            case 1:
-                this.reproductivity = Reproductivity.FEMALE.getStatus();
-                break;
-            case 2:
-                this.reproductivity = Reproductivity.INFERTILE.getStatus();
-                break;
-        }
-    }
-
-    public String getReproductivity() {
-        return reproductivity;
-    }
 
     public int getIdCounter() {
         return idCounter;
@@ -54,5 +37,13 @@ public abstract class Animal {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSex() {
+        return this.sex;
+    }
+
+    public String getReproductivity() {
+        return this.reproductivity;
     }
 }

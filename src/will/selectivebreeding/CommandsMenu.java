@@ -49,7 +49,7 @@ public class CommandsMenu {
                         user.printMessage("Breeding pair is incompatible");
                     } else {
                         user.printMessage("A new dragon has been born");
-                        user.printMessage(String.format("They are: %s", offspring.getReproductivity()));
+                        user.printMessage(String.format("They are a %s", offspring.getSex()));
                         user.printMessage("Please give them a name");
                         String offspringName = user.readTextInput();
                         offspring.setName(offspringName);
