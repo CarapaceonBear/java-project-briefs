@@ -27,23 +27,18 @@ public class RockPaperScissorsLizardSpockCommands extends Commands {
             int cpuInput = (int) (Math.random()*5+1);
             switch (cpuInput) {
                 case 1:
-                    printMessage("CPU played Rock!");
                     cpuMove = String.valueOf(Play.Rock);
                     break;
                 case 2:
-                    printMessage("CPU played Paper!");
                     cpuMove = String.valueOf(Play.Paper);
                     break;
                 case 3:
-                    printMessage("CPU played Scissors!");
                     cpuMove = String.valueOf(Play.Scissors);
                     break;
                 case 4:
-                    printMessage("You played Lizard!");
                     cpuMove = String.valueOf(Play.Lizard);
                     break;
                 case 5:
-                    printMessage("You played Spock!");
                     cpuMove = String.valueOf(Play.Spock);
                     break;
             }
@@ -76,6 +71,7 @@ public class RockPaperScissorsLizardSpockCommands extends Commands {
                     win = spock.checkWin();
                     break;
             }
+            printMessage("CPU played " + cpuMove + "!");
 
             if (userInput == cpuInput) {
                 printMessage("Draw!");
