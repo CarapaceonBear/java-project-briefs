@@ -8,12 +8,9 @@ public class Main {
         System.out.println("Let's solve simple-arithmetic");
 
 
+        CommandsMenu commands = new CommandsMenu();
 
-        Addition addition = new Addition();
-
-       addition.run();
-
-
+        commands.displayCommands();
 
 
 
